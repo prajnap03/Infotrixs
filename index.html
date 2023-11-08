@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather WebApp</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- FONT FAMILY -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+    
+</head>
+<body>
+    
+    <div class="sidebar">
+        <form action="/search" method="get">
+            <input type="text" class="search-box" name="search" placeholder="Search for places . . .">
+        </form>
+
+        <h2>TODAY'S WEATHER</h2>
+        <div class="sidebar-card-container">
+            <div class="card">
+                <img src="cloudy.png" alt="Sunny">
+                <h1>23&deg<sup><span style="font-size: 50px;">C</span></sup></h1>
+                <p>CLOUDY</p>
+                <br>
+                <p>WEDNESDAY | 10:00 AM</p>
+            </div>
+        </div>
+        <br><hr>
+        <div class="location-info">
+            <h1>BANGALORE</h1>
+            <p>Date: 08-11-2023</p>
+        </div>
+    </div>
+    
+    <div class="main-content">
+        <div class="weeks-title">
+            <p>WEEK'S FORECAST</p>
+        </div>
+        <div class="card-container">
+            <div class="card">
+                <h2>THUR</h2>
+                <img src="cloudy.png" alt="Sunny">
+                <h3>30&degC | 86&degF</h3>
+                <p>CLOUDY</p>
+            </div>
+
+            <div class="card">
+                <h2>FRI</h2>
+                <img src="rainy.png" alt="Rainy">
+                <h3>30&degC | 86&degF</h3>
+                <p>RAINY</p>
+            </div>
+
+            <div class="card">
+                <h2>SAT</h2>
+                <img src="thunder_storm.png" alt="ThunderStorm" width="185px">
+                <h3>30&degC | 86&degF</h3>
+                <p>THUNDER STORM</p>
+            </div>
+
+            <div class="card">
+                <h2>SUN</h2>
+                <img src="cloudy.png" alt="Sunny">
+                <h3>30&degC | 86&degF</h3>
+                <p>CLOUDY</p>
+            </div>
+
+            <div class="card">
+                <h2>MON</h2>
+                <img src="sunny.png" alt="Sunny"  width="182px">
+                <h3>30&degC | 86&degF</h3>
+                <p>SUNNY</p>
+            </div>
+
+            <div class="card">
+                <h2>TUE</h2>
+                <img src="rainy.png" alt="Sunny">
+                <h3>30&degC | 86&degF</h3>
+                <p>RAINY</p>
+            </div>
+
+            <div class="card">
+                <h2>WED</h2>
+                <img src="thunder_storm.png" alt="Sunny"  width="185px">
+                <h3>30&degC | 86&degF</h3>
+                <p>THUNDER STORM</p>
+            </div>
+        </div>
+        
+        <!-- Today's Highlight-->
+        <h1>TODAY'S HIGHLIGHT</h1>
+
+        <!--More details about weather cards-->
+        <div class="more-details-card-container">
+            <div class="card">
+                <h2>SUNRISE</h2>
+                <img src="sunrise.png" alt="SunRise">
+                <h3>6:15 AM</h3>
+            </div>
+
+            <div class="card">
+                <h2>HUMIDITY</h2>
+                <img src="humidity.png" alt="Humidity">
+                <h3>90%</h3>
+            </div>
+
+            <div class="card">
+                <h2>WIND</h2>
+                <img src="wind.png" alt="Wind">
+                <h3>11 Km/h</h3>
+            </div>
+            <br>
+            <div class="card">
+                <h2>SUNSET</h2>
+                <img src="sunset.png" alt="SunSet">
+                <h3>5:51 PM</h3>
+            </div>
+
+            <div class="card">
+                <h2>PRECIPITATION</h2>
+                <img src="rainy.png" alt="Precipitation">
+                <h3>78%</h3>
+            </div>
+
+            <div class="card">
+                <h2>PRESSURE</h2>
+                <img src="air-pressure.png" alt="Pressure">
+                <h3>683 mmHg</h3>
+            </div>
+        </div>
+
+    </div> 
+
+</body>
+</html>

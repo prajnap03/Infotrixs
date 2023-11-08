@@ -1,0 +1,296 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Poppins:ital,wght@0,100;1,100&family=Vollkorn&display=swap');
+
+body
+{
+    background-image: url("background2.jfif");
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: black;
+    cursor: default;
+}
+
+
+.sidebar {
+    height: 100%;
+    width: 300px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgb(255, 255, 255); /* Background color for the sidebar */
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(156, 156, 156, 0.25); /* Add a box shadow */
+    z-index: 1;
+}
+
+/* Style for the search box */
+.search-box {
+    width: 93%;
+    height: 30px;
+    padding: 10px;
+    border-radius: 0px;
+    margin-bottom: 20px;
+    border: hidden;
+    background-color: whitesmoke;
+}
+
+input[type="text"] 
+{
+    font-size: 18px;
+}
+
+.sidebar h2
+{
+    font-family: 'Poppins', sans-serif;
+    text-align: left;
+}
+
+.sidebar .card {
+    margin-top: 10px;
+    width: 250px;
+    height: 250px;
+    background-color: #ffffff;
+    display: inline-block;
+}
+
+.sidebar .card img {
+    max-width: 100%;
+    max-height: 100%;
+    margin-left: 0px;
+    margin-top: 30px;
+    scale: 1.1;
+    transition-duration: 0.25s;
+}
+
+.sidebar .card img:hover
+{
+    transform: scale(1.05); /* Scale the image on hover */
+}
+
+.sidebar .card h1
+{
+    font-family: 'Poppins', sans-serif;
+    text-align: left;
+    font-size: 70px;
+    font-weight: 100;
+    margin-top: -10px;
+    margin-bottom: -35px;
+}
+
+.sidebar .card p
+{
+    font-family: 'Poppins', sans-serif;
+    text-align: left;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.sidebar .location-info h1
+{
+    font-family: 'Poppins', sans-serif;
+    text-align: left;
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.sidebar .location-info p
+{
+    font-family: 'Poppins', sans-serif;
+    text-align: left;
+    font-size: 20px;
+    font-weight: 700;
+    margin-top: -30px;
+}
+
+/* CSS for the content area with horizontal scroll */
+.main-content {
+    margin-left: 300px;
+    padding: 20px;
+    overflow-x: auto;
+}
+
+.weeks-title p
+{
+    margin-left: 50px;
+    margin-top: -10px;
+    margin-bottom: 0px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    top: 0px;
+}
+
+.main-content h1
+{
+    margin-left: 50px;
+    margin-top: 30px;
+    margin-bottom: -25px;
+    font-family: 'Poppins', sans-serif;
+}
+
+ /* CSS for the card container */
+ .card-container {
+    margin-top: 10px;
+    white-space: nowrap;
+    width: 100%; /* Expand to full width of content area */
+    overflow-x: auto;
+    padding-bottom: 20px; /* Add some padding to move the scrollbar down */
+}
+
+/* CSS for individual cards */
+.card-container .card {
+    width: 260px;
+    height: 325px;
+    margin-right: 0px;
+    margin-left: 50px;
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 30px;
+    display: inline-block;
+    text-align: center;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2); /* Add a box shadow */
+}
+
+/* CSS for card images */
+.card-container .card img {
+    max-width: 100%;
+    max-height: 100%;
+    margin-bottom: 10px;
+    margin-top: 20px;
+    scale: 0.9;
+    transition-duration: 0.25s;
+}
+
+.card-container .card img:hover {
+    transform: scale(1.1); /* Scale the image on hover */
+}
+
+.card-container .card h2
+{
+    text-align: center;
+    margin-bottom: -20px;
+    margin-top: 10px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 30px;
+}
+
+.card-container .card h3
+{
+    text-align: center;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 25px;
+}
+
+.card-container .card p
+{
+    text-align: center;
+    margin-bottom: 10px;
+    margin-top: 0px;
+    padding: auto;
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.more-details-card-container
+{
+    margin-top: 25px;
+    white-space: nowrap;
+    overflow-x: auto;
+    width: 100%; /* Expand to full width of content area */
+    padding-bottom: 0px; /* Add some padding to move the scrollbar down */
+    bottom: 0px;
+}
+
+.more-details-card-container .card
+{
+    width: 450px;
+    height: 170px;
+    margin-right: 8px;
+    margin-left: 50px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 30px;
+    display: inline-block;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2); /* Add a box shadow */
+    transition-duration: 0.25s;
+}
+
+.more-details-card-container .card:hover
+{
+    transform: translateY(-5px);
+    box-shadow: 0px 2px 10px rgb(123, 169, 173, 1); /* Add a box shadow */
+}
+
+.more-details-card-container .card img {
+    max-width: 100%;
+    max-height: 100%;
+    scale: 0.6;
+    margin-bottom: 10px;
+    margin-top: -80px;
+    transition-duration: 0.25s;
+}
+
+.more-details-card-container .card:hover img
+{
+    transform: scale(1.1);
+}
+
+.more-details-card-container .card h2
+{
+    font-family: 'Poppins', sans-serif;
+    font-size: 25px;
+    text-align: center;
+    margin-left: 180px;
+}
+
+.more-details-card-container .card h3
+{
+    font-family: 'Poppins', sans-serif;
+    font-size: 40px;
+    text-align: center;
+    margin-top: -100px;
+    margin-left: 180px;
+}
+
+ /* Style for the scrollbar (for webkit-based browsers like Chrome and Safari) */
+ .card-container::-webkit-scrollbar {
+    width: 5px;
+    height: 3px;
+}
+
+.card-container::-webkit-scrollbar-thumb {
+    background-color: rgba(245, 245, 245, 0);
+    border: 0px solid transparent;
+}
+
+.card-container::-webkit-scrollbar-thumb:hover {
+    background-color: rgba(245, 245, 245, 0);
+}
+
+.card-container::-webkit-scrollbar-track {
+    background: rgba(245, 245, 245, 0);
+}
+
+/* Bottom cards scrollbars*/
+.more-details-card-container::-webkit-scrollbar {
+    width: 5px;
+    height: 3px;
+}
+
+.more-details-card-container::-webkit-scrollbar-thumb {
+    background-color: rgba(245, 245, 245, 0);
+    border: 0px solid transparent;
+}
+
+.more-details-card-container::-webkit-scrollbar-thumb:hover {
+    background-color: rgba(245, 245, 245, 0);
+}
+
+.more-details-card-container::-webkit-scrollbar-track {
+    background: rgba(245, 245, 245, 0);
+}
